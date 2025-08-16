@@ -6,6 +6,14 @@ import Logo from '../public/WebSiteLogo.png';
 export default function Home() {
   const [page, setPage] = useState('home');
 
+  return (
+    <header className="flex items-center justify-between p-6">
+      <Image src="/WebSiteLogo.png" alt="Logo" width={80} height={80} />
+      {/* rest of header... */}
+    </header>
+  );
+
+  
   const colors = {
     gold: '#D29A0A',
     red: '#FF0000',
